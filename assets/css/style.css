@@ -1,0 +1,343 @@
+.headerDescription{
+    background-color: #03304d;
+    color: white;
+}
+
+.button1 {
+  border: 1px solid white;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(to right, #506b81, #78ffd6);
+  margin-top: 20px;
+  padding: 18px, 50px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: all 0.3s ease-in 0s;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+  background: linear-gradient(to right, #506b81,  rgb(63, 98, 172));
+  height: 1rem;
+  border-radius: 10px;
+}
+
+.socialMedia
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: linear-gradient(to right, #506b81,  rgb(63, 98, 172));
+}
+
+img {
+    border-radius: 1rem;
+    border-radius: 450px;
+    vertical-align: middle;
+    border-style: none;
+    border: 3px solid white;
+
+}
+
+ /*Section timeline*/
+
+.progress{
+ height: 5rem ;
+}
+
+.timeline{
+    background: linear-gradient(to right, #506b81,  rgb(63, 98, 172));
+}
+
+.list{
+  justify-content: center;
+}
+.list ol{
+  list-style: none;
+  counter-reset: my-counter;
+  margin: 0rem;
+  padding:  0rem 0rem 0rem 1.5rem;
+}
+.list li{
+  counter-increment: my-counter;
+  border-left: solid 2px #cdcdcd;
+/*  border-bottom: solid 2px #cdcdcd; */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "icon:text";
+  align-items: start;
+}
+.list li:before {
+  content: counter(my-counter);
+  font-weight: bold;
+  background-color: #cdcdcd;
+  border: 3px solid #f5f6f1;
+  border-radius: 50px;
+  font-size: 20px;
+  padding: 0.8rem 1.4rem;
+  color: #fff;
+  margin-left: -2.0rem;
+  margin-right: auto;
+  grid-area: icon;
+}
+.cardXp{
+  grid-area: text;
+  margin-left: 4rem;
+  border-radius: 0px;
+  box-shadow: 0 0 5px 1px #ddd;
+  margin-top: 0.5rem;
+  max-width: 75rem;
+  background: linear-gradient(to right, #506b81,  rgb(63, 98, 172));
+  color: white;
+}
+.card-html .card-header:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #e65127;
+  border-width: 10px;
+  top: 10px;
+}
+.card-css .card-header:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #379ad6;
+  border-width: 10px;
+  top: 10px;
+}
+.card-js .card-header:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #f2bf26;
+  border-width: 10px;
+  top: 10px;
+}
+.card-php .card-header:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #8b92bd;
+  border-width: 10px;
+  top: 10px;
+}
+.card-bootstrap .card-header:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #7952b3;
+  border-width: 10px;
+  top: 10px;
+}
+.cardXp .card-header{
+  color: #fff;
+  font-size: 22px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.btn-success{
+  background-color: #64dcfa;
+  color: #fff;
+  border-color: #bac5e2;
+  border-radius: 0px;
+}
+.card-css .card-header, .card-css .btn-success{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-color: #379ad6;
+}
+.card-html .card-header, .card-html .btn-success{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-color: #e65127;
+}
+.card-js .card-header, .card-js .btn-success{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-color: #f2bf26;
+}
+.card-bootstrap .card-header, .card-bootstrap .btn-success{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-color: #7952b3;
+}
+.card-php .card-header, .card-php .btn-success{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-color: #8b92bd;
+}
+/*=============================hobbies=======================*/
+
+.imgHobbies
+{
+  transition: 0.5s all;
+  filter: opacity(1);
+  font-size: 3em;
+ 
+  background-color: #0c0d0e;
+}
+.textHover
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.imgHobbies:hover
+{
+  transition: 0.5s all;
+  filter: opacity(0.8);
+}
+ /*Fin de la section timeline*/
+
+ /*Section barres de progression*/
+ .progress {
+    width: 150px;
+    height: 150px;
+    background: none;
+    position: relative
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progress>span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.progress .progress-left {
+    left: 0
+}
+
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0
+}
+
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left
+}
+
+.progress .progress-right {
+    right: 0
+}
+
+.progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.progressBar {
+    background: linear-gradient(to right, #506b81, #78ffd6);
+}
+
+.rounded-lg {
+    border-radius: 1rem
+}
+
+.text-gray {
+    color: #aaa
+}
+
+div.h4 {
+    line-height: 1rem
+}
+
+ /*Fin de section barres de progression*/
+
+.card{
+  border: 0px;
+ }
+
+.content{
+    background: linear-gradient(to right, #506b81, #78ffd6);
+    border-radius: 4%;
+}
+
+ul{
+    list-style: none;
+    color: white;
+}
+
+.contact{
+  background: linear-gradient(to right, #506b81, #78ffd6);
+  color: rgb(6, 19, 77);
+}
+
+.fa-php{
+  color: #8b92bd;
+}
+
+.fa-wordpress{
+  color: #379ad6;
+}
+
+.fa-js{
+  color: rgb(241, 208, 18);
+}
+
+.fa-css3{
+  color: #379ad6;
+}
+
+.fa-html5{
+  color: orangered;
+}
+
+.fa-bootstrap{
+  color: #7952b3;
+}
